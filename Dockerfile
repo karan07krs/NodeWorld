@@ -7,9 +7,7 @@ EXPOSE 80 8080
 RUN apt-get update -q  \
  && apt-get install -yqq \
  curl \
- git \
  ssh \
- gcc \
  make \
  build-essential \
  libkrb5-dev \
