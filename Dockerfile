@@ -30,8 +30,8 @@ RUN apt-get update \
     && apt-get install -y nginx \
     && sudo rm -r /etc/nginx/nginx.conf
 
-#COPY default /etc/nginx/sites-enabled/
-COPY nginx.conf /etc/nginx/
+COPY default /etc/nginx/sites-enabled/
+#COPY nginx.conf /etc/nginx/
 
 # Copy supervisord conf
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
