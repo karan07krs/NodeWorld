@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # 80 = HTTP, 443 = HTTPS, 3000 = MEAN.JS server, 35729 = livereload, 8080 = node-inspector
-EXPOSE 80 3000
+EXPOSE 80 8080
 
 # Install Utilities
 RUN apt-get update -q  \
