@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # 80 = HTTP, 443 = HTTPS, 3000 = MEAN.JS server, 35729 = livereload, 8080 = node-inspector
-EXPOSE 80 8080
+EXPOSE 80 3000
 
 # Install Utilities
 RUN apt-get update -q  \
@@ -29,8 +29,8 @@ RUN sudo apt-get install -yq nodejs \
 RUN apt-get update \
     && apt-get install -y nginx \
 
-COPY default.conf /etc/nginx/sites-enabled/
-#COPY nginx.conf /etc/nginx/
+#COPY default.conf /etc/nginx/sites-enabled/
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy supervisord conf
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
