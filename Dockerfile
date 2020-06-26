@@ -28,9 +28,8 @@ RUN sudo apt-get install -yq nodejs \
 # Install and copy Nginx
 RUN apt-get update \
     && apt-get install -y nginx \
-    && sudo rm -r /etc/nginx/nginx.conf
 
-COPY default /etc/nginx/sites-enabled/
+COPY default.conf /etc/nginx/sites-enabled/
 #COPY nginx.conf /etc/nginx/
 
 # Copy supervisord conf
