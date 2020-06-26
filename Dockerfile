@@ -47,7 +47,7 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install && npm cache clean --force
 COPY . /usr/src/app
-RUN npm run build:ssr    [change as per your app's build step]
+#RUN npm run build:ssr    [change as per your app's build step]
 
 
 CMD [ "/bin/sh", "/start.sh" ]
