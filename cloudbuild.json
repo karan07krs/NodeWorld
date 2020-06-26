@@ -20,7 +20,7 @@
       "args": [
          "run",
          "deploy",
-         "php72",
+         "nodeworld",
          "--image",
          "gcr.io/kiss-16325/new_testing_code:$COMMIT_SHA",
          "--region",
