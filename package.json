@@ -19,7 +19,7 @@
   "homepage": "https://github.com/karan07krs/NodeWorld#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "pm2": "^4.4.0"
+    "pm2": "^5.2.0"
   },
   "devDependencies": {
     "mocha": "^7.1.2",
