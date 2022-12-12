@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/karan07krs/NodeWorld#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pm2": "^4.4.0"
   },
   "devDependencies": {
